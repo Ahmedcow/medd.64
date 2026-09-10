@@ -4,29 +4,171 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Med64 — Medical Examination Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#687386;--line:#e4e9f0;--primary:#2563eb;--primary2:#1d4ed8;--danger:#dc2626;--ok:#059669;--warn:#d97706;--shadow:0 8px 28px rgba(15,23,42,.07)}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text)}
-button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:flex;min-height:100vh}.sidebar{width:250px;background:#111827;color:#fff;padding:18px 14px;position:fixed;inset:0 auto 0 0;z-index:10}.brand{font-size:23px;font-weight:800;padding:10px 12px 20px}.brand small{display:block;font-size:11px;color:#9ca3af;font-weight:500;margin-top:4px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#d1d5db;text-align:left;padding:11px 12px;border-radius:10px}.nav button:hover,.nav button.active{background:#1f2937;color:#fff}.main{margin-left:250px;width:calc(100% - 250px);padding:24px;max-width:1500px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}.top h1{margin:0;font-size:28px}.sub{color:var(--muted);font-size:14px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:9px 13px;border-radius:9px;font-weight:700}.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}.btn.primary:hover{background:var(--primary2)}.btn.danger{color:#fff;background:var(--danger);border-color:var(--danger)}.btn.ok{color:#fff;background:var(--ok);border-color:var(--ok)}.btn:disabled{opacity:.55;cursor:not-allowed}.grid{display:grid;gap:16px}.stats{grid-template-columns:repeat(4,minmax(0,1fr))}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}.stat .label{color:var(--muted);font-size:13px}.stat .value{font-size:29px;font-weight:800;margin-top:5px}.section-title{margin:26px 0 12px;font-size:18px}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.field label{display:block;font-size:12px;color:var(--muted);font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px;color:var(--text)}.field textarea{min-height:130px;resize:vertical}.bar{height:9px;background:#e8edf4;border-radius:999px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--primary);border-radius:999px}.progress-row{display:grid;grid-template-columns:180px 1fr 70px 80px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.progress-row:last-child{border-bottom:0}.pill{display:inline-block;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;background:#eef2ff;color:#3730a3}.table-wrap{overflow:auto}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:11px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}.table th{color:var(--muted);font-size:12px}.hidden{display:none!important}.quiz{max-width:980px;margin:auto}.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px}.timer{font-weight:900;color:var(--primary)}.question{font-size:21px;line-height:1.5;font-weight:700;margin:18px 0}.options{display:grid;gap:10px}.option{border:1px solid var(--line);background:#fff;border-radius:11px;padding:14px;text-align:left}.option:hover{border-color:#93c5fd}.option.selected{border-color:var(--primary);background:#eff6ff}.option.correct{border-color:#10b981;background:#ecfdf5}.option.wrong{border-color:#ef4444;background:#fef2f2}.review{margin-top:14px;padding:14px;border-radius:10px;background:#f8fafc;border:1px solid var(--line)}.review.good{border-left:4px solid var(--ok)}.review.bad{border-left:4px solid var(--danger)}.quiz-footer{display:flex;justify-content:space-between;gap:10px;margin-top:18px}.notice{padding:11px 13px;border-radius:9px;background:#eff6ff;color:#1e40af;font-size:13px}.notice.error{background:#fef2f2;color:#991b1b}.notice.ok{background:#ecfdf5;color:#065f46}.empty{text-align:center;padding:38px;color:var(--muted)}.category-card{padding:15px;border:1px solid var(--line);border-radius:11px;margin-bottom:9px}.category-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.mini{font-size:12px;color:var(--muted)}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}@media(max-width:1000px){.stats,.filters{grid-template-columns:repeat(2,1fr)}.sidebar{width:210px}.main{margin-left:210px;width:calc(100% - 210px)}}@media(max-width:700px){.sidebar{position:static;width:100%;min-height:auto}.app{display:block}.main{margin:0;width:100%;padding:15px}.nav{grid-template-columns:repeat(3,1fr)}.nav button{font-size:12px}.stats,.filters,.two,.three{grid-template-columns:1fr}.progress-row{grid-template-columns:1fr 1fr}.top{align-items:flex-start;flex-direction:column}}
+:root{
+  --bg:#eef2f0;--card:#ffffff;--text:#101826;--muted:#5b6b72;--line:#dbe3e1;
+  --primary:#0c7c8c;--primary2:#095f6c;--primary-rgb:12,124,140;--primary-soft:#e1f0f0;
+  --danger:#c0392b;--danger-soft:#fbeae7;
+  --ok:#1f8a55;--ok-soft:#e7f5ec;
+  --warn:#b4780a;--warn-soft:#fbf0de;
+  --ink:#101826;
+  --shadow:0 20px 40px -18px rgba(16,24,38,.35);
+  --shadow-sm:0 1px 2px rgba(16,24,38,.06);
+  --radius:16px;--radius-sm:10px;
+  --topbar-h:58px;--sidebar-w:264px;
+  --font-sans:'Inter',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --font-serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-sans);background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+h1,h2,h3{font-family:var(--font-serif);font-weight:600;letter-spacing:-.01em;margin:0}
+:focus-visible{outline:2px solid var(--primary);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.001ms!important;animation-duration:.001ms!important}}
+
+/* ---------- App shell ---------- */
+.app{display:flex;min-height:100vh}
+.scrim{position:fixed;inset:0;background:rgba(8,12,18,.5);opacity:0;pointer-events:none;transition:opacity .22s ease;z-index:40}
+.app.sidebar-open .scrim{opacity:1;pointer-events:auto}
+.appshell{flex:1;min-width:0;display:flex;flex-direction:column;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;height:var(--topbar-h);padding:0 18px;background:rgba(238,242,240,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar-brand{font-family:var(--font-serif);font-size:17px;font-weight:600}
+.topbar-brand small{display:block;font-family:var(--font-sans);font-weight:500;font-size:10.5px;color:var(--muted);letter-spacing:.02em;margin-top:-2px}
+.icon-btn{width:38px;height:38px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);background:var(--card);border-radius:10px;transition:border-color .15s ease,background .15s ease}
+.icon-btn:hover{border-color:var(--primary)}
+.icon-btn svg{width:18px;height:18px;stroke:var(--text);fill:none}
+.main{flex:1;padding:24px;max-width:1500px;width:100%}
+
+/* ---------- Sidebar window ---------- */
+.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar-w);max-width:86vw;background:var(--ink);color:#fff;z-index:50;transform:translateX(-105%);transition:transform .25s ease;box-shadow:var(--shadow)}
+.app.sidebar-open .sidebar{transform:translateX(0)}
+.sidebar-inner{width:var(--sidebar-w);max-width:86vw;height:100%;display:flex;flex-direction:column;padding:16px 14px;overflow-y:auto}
+.sidebar-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:6px 6px 20px}
+.brand{font-family:var(--font-serif);font-size:20px;font-weight:600;line-height:1.15}
+.brand small{display:block;font-family:var(--font-sans);font-size:11px;font-weight:500;color:#93a6ab;margin-top:6px;letter-spacing:.01em}
+.sidebar .icon-btn{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.sidebar .icon-btn svg{stroke:#fff}
+.sidebar .icon-btn:hover{border-color:var(--primary)}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav button{display:flex;align-items:center;gap:11px;border:0;background:transparent;color:#c6d1d5;text-align:left;padding:10px 12px;border-radius:10px;font-size:14px;font-weight:600;position:relative}
+.nav button svg{width:18px;height:18px;flex:0 0 auto;opacity:.85;stroke:currentColor;fill:none}
+.nav button:hover{background:rgba(255,255,255,.07);color:#fff}
+.nav button.active{background:rgba(var(--primary-rgb),.28);color:#fff}
+.nav button.active svg{opacity:1}
+.sidebar-foot{margin-top:auto;padding:14px 10px 4px;font-size:11.5px;color:#93a6ab;border-top:1px solid rgba(255,255,255,.12)}
+@media(min-width:881px){
+  .sidebar{position:sticky;top:16px;height:calc(100vh - 32px);margin:16px 0 16px 16px;border-radius:var(--radius);width:var(--sidebar-w);transform:none;transition:width .22s ease,opacity .18s ease,margin .22s ease;overflow:hidden}
+  .app:not(.sidebar-open) .sidebar{width:0;margin-left:0;opacity:0;box-shadow:none;pointer-events:none}
+  .scrim{display:none}
+}
+
+/* ---------- Page header ---------- */
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.top h1{font-size:26px}
+.sub{color:var(--muted);font-size:14px;margin-top:4px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ---------- Buttons & fields ---------- */
+.btn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:9px 14px;border-radius:var(--radius-sm);font-weight:600;font-size:13.5px;transition:border-color .15s ease,background .15s ease,transform .1s ease}
+.btn:hover{border-color:var(--primary)}
+.btn:active{transform:translateY(1px)}
+.btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
+.btn.primary:hover{background:var(--primary2);border-color:var(--primary2)}
+.btn.danger{color:#fff;background:var(--danger);border-color:var(--danger)}
+.btn.ok{color:#fff;background:var(--ok);border-color:var(--ok)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.grid{display:grid;gap:16px}
+.stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.two{grid-template-columns:1fr 1fr}
+.three{grid-template-columns:repeat(3,1fr)}
+.field label{display:block;font-size:12px;color:var(--muted);font-weight:600;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);padding:10px;color:var(--text)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--primary)}
+.field textarea{min-height:130px;resize:vertical;font-family:var(--font-mono);font-size:13px}
+
+/* ---------- Cards & readouts ---------- */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow-sm)}
+.stat{position:relative;overflow:hidden;padding-top:20px}
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--primary)}
+.stat .label{color:var(--muted);font-size:12.5px}
+.stat .value{font-family:var(--font-mono);font-size:28px;font-weight:600;margin-top:6px;letter-spacing:-.01em}
+.section-title{margin:28px 0 12px;font-size:17px}
+.bar{height:8px;background:#e3e9e7;border-radius:999px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--primary);border-radius:999px}
+.progress-row{display:grid;grid-template-columns:180px 1fr 70px 80px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.progress-row:last-child{border-bottom:0}
+.pill{display:inline-block;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:700;background:var(--primary-soft);color:var(--primary2);font-family:var(--font-mono)}
+.table-wrap{overflow:auto}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{text-align:left;padding:11px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13px}
+.table th{color:var(--muted);font-size:12px;background:var(--bg)}
+.hidden{display:none!important}
+
+/* ---------- Quiz ---------- */
+.quiz{max-width:980px;margin:auto}
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.timer{font-family:var(--font-mono);font-weight:600;color:var(--primary);font-size:17px}
+.question{font-family:var(--font-serif);font-size:21px;line-height:1.5;font-weight:600;margin:18px 0}
+.options{display:grid;gap:10px}
+.option{border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);padding:14px;text-align:left;transition:border-color .15s ease,background .15s ease}
+.option:hover{border-color:var(--primary)}
+.option.selected{border-color:var(--primary);background:var(--primary-soft)}
+.option.correct{border-color:var(--ok);background:var(--ok-soft)}
+.option.wrong{border-color:var(--danger);background:var(--danger-soft)}
+.review{margin-top:14px;padding:14px;border-radius:var(--radius-sm);background:var(--bg);border:1px solid var(--line)}
+.review.good{border-left:4px solid var(--ok)}
+.review.bad{border-left:4px solid var(--danger)}
+.quiz-footer{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.notice{padding:11px 13px;border-radius:var(--radius-sm);background:var(--primary-soft);color:var(--primary2);font-size:13px}
+.notice.error{background:var(--danger-soft);color:#8a291d}
+.notice.ok{background:var(--ok-soft);color:#136b40}
+.empty{text-align:center;padding:38px;color:var(--muted)}
+.category-card{padding:15px;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:9px}
+.category-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.mini{font-size:12px;color:var(--muted)}
+
+@media(max-width:1000px){.stats,.filters{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.main{padding:16px}.stats,.filters,.two,.three{grid-template-columns:1fr}.progress-row{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
 <div class="app">
-<aside class="sidebar">
-  <div class="brand">Med64<small>Advanced Medical Examination Platform</small></div>
-  <div class="nav">
-    <button data-view="dashboard">Dashboard</button>
-    <button data-view="exam">Start Exam</button>
-    <button data-view="progress">Progress & Accuracy</button>
-    <button data-view="mistakes">Mistakes</button>
-    <button data-view="bank">Question Bank</button>
-    <button data-view="import">Upload / Update Questions</button>
-    <button data-view="settings">Settings</button>
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="sidebar-head">
+      <div class="brand">Med64<small>Medical Examination Platform</small></div>
+      <button class="icon-btn" id="sidebarClose" aria-label="Close menu"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round"><line x1="4" y1="4" x2="16" y2="16"/><line x1="16" y1="4" x2="4" y2="16"/></svg></button>
+    </div>
+    <div class="nav">
+      <button data-view="dashboard"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="2" width="7" height="7" rx="1.5"/><rect x="11" y="2" width="7" height="7" rx="1.5"/><rect x="2" y="11" width="7" height="7" rx="1.5"/><rect x="11" y="11" width="7" height="7" rx="1.5"/></svg><span>Dashboard</span></button>
+      <button data-view="exam"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="12" height="15" rx="2"/><rect x="7" y="1.3" width="6" height="3" rx="1"/><line x1="7" y1="9" x2="13" y2="9"/><line x1="7" y1="12.4" x2="13" y2="12.4"/><line x1="7" y1="15.8" x2="10.5" y2="15.8"/></svg><span>Start Exam</span></button>
+      <button data-view="progress"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="2.5,15 7,9.5 10.5,12.5 17.5,4"/><polyline points="12.5,4 17.5,4 17.5,9"/></svg><span>Progress & Accuracy</span></button>
+      <button data-view="history"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10.5" r="7.5"/><polyline points="10,6 10,10.5 13.2,12.6"/><polyline points="3.5,2 3.5,5 6.5,5"/></svg><span>Exam History</span></button>
+      <button data-view="mistakes"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.5"/><line x1="7.3" y1="7.3" x2="12.7" y2="12.7"/><line x1="12.7" y1="7.3" x2="7.3" y2="12.7"/></svg><span>Mistakes</span></button>
+      <button data-view="bank"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="10,2 18,6.5 10,11 2,6.5"/><polyline points="2,10.5 10,15 18,10.5"/><polyline points="2,14.5 10,19 18,14.5"/></svg><span>Question Bank</span></button>
+      <button data-view="import"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V2.5"/><polyline points="6,6.5 10,2.5 14,6.5"/><path d="M3 13v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/></svg><span>Upload / Update Questions</span></button>
+      <button data-view="settings"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round"><line x1="2" y1="5" x2="18" y2="5"/><circle cx="13" cy="5" r="2"/><line x1="2" y1="10" x2="18" y2="10"/><circle cx="7" cy="10" r="2"/><line x1="2" y1="15" x2="18" y2="15"/><circle cx="14" cy="15" r="2"/></svg><span>Settings</span></button>
+    </div>
+    <div class="sidebar-foot" id="sidebarFoot">Loading question bank…</div>
   </div>
 </aside>
-<main class="main">
-<div id="app"></div>
-</main>
+<div class="appshell">
+  <header class="topbar">
+    <button class="icon-btn" id="sidebarOpen" aria-label="Toggle menu"><svg viewBox="0 0 20 20" fill="none" stroke-width="1.6" stroke-linecap="round"><line x1="2.5" y1="5.5" x2="17.5" y2="5.5"/><line x1="2.5" y1="10" x2="17.5" y2="10"/><line x1="2.5" y1="14.5" x2="17.5" y2="14.5"/></svg></button>
+    <div class="topbar-brand">Med64<small>Medical Examination Platform</small></div>
+  </header>
+  <main class="main">
+  <div id="app"></div>
+  </main>
+</div>
 </div>
 <script>
 'use strict';
@@ -43,7 +185,10 @@ const CONFIG = {
   manifest: './questions/index.json',
   cacheKey: 'med64_github_bank_v1',
   progressKey: 'med64_progress_v3',
-  settingsKey: 'med64_settings_v3'
+  settingsKey: 'med64_settings_v3',
+  lastResultKey: 'med64_last_result_v2',
+  historyKey: 'med64_history_v1',
+  localQuestionsKey: 'med64_local_questions_v1'
 };
 
 const DEFAULT_SETTINGS = {
@@ -55,6 +200,7 @@ const DEFAULT_SETTINGS = {
 
 let bank = [];
 let sourceFiles = [];
+let localQuestions = loadJSON(CONFIG.localQuestionsKey, []);
 let progress = loadJSON(CONFIG.progressKey, {});
 let settings = {...DEFAULT_SETTINGS, ...loadJSON(CONFIG.settingsKey, {})};
 let exam = null;
@@ -136,15 +282,23 @@ async function loadFromGitHub(){
     }
     const errors=validateBank(all);
     if(errors.length) throw new Error(errors.slice(0,8).join('\\n'));
-    bank=all;
+    const githubIds = new Set(all.map(q=>q.id));
+    const retainedLocal = localQuestions.filter(q=>!githubIds.has(q.id));
+    bank=[...all,...retainedLocal];
+    localQuestions=retainedLocal;
+    localStorage.setItem(CONFIG.localQuestionsKey, JSON.stringify(localQuestions));
     localStorage.setItem(CONFIG.cacheKey, JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
     lastSync=new Date();
     render();
-    toast(`Loaded ${bank.length} questions from GitHub.`, 'ok');
+    toast(`Loaded ${all.length} GitHub questions${retainedLocal.length?` + ${retainedLocal.length} local questions`:''}.`, 'ok');
   }catch(e){
     const cached=loadJSON(CONFIG.cacheKey,null);
     if(cached && Array.isArray(cached.bank)){
-      bank=cached.bank;
+      const cachedIds = new Set(cached.bank.map(q=>q.id));
+      const retainedLocal = localQuestions.filter(q=>!cachedIds.has(q.id));
+      bank=[...cached.bank,...retainedLocal];
+      localQuestions=retainedLocal;
+      localStorage.setItem(CONFIG.localQuestionsKey, JSON.stringify(localQuestions));
       sourceFiles=cached.sourceFiles||[];
       lastSync=cached.updatedAt ? new Date(cached.updatedAt) : null;
       render();
@@ -189,13 +343,15 @@ function layout(title,subtitle,body,actions=''){
 }
 
 function render(){
+  updateSidebarFoot();
   const view=location.hash.replace('#','')||'dashboard';
-  const allowed=['dashboard','exam','progress','mistakes','bank','import','settings','results'];
+  const allowed=['dashboard','exam','progress','mistakes','bank','import','settings','results','history'];
   const v=allowed.includes(view)?view:'dashboard';
   document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===v));
   if(v==='dashboard') renderDashboard();
   else if(v==='exam') renderExamSetup();
   else if(v==='progress') renderProgress();
+  else if(v==='history') renderHistory();
   else if(v==='mistakes') renderMistakes();
   else if(v==='bank') renderBank();
   else if(v==='import') renderImport();
@@ -204,8 +360,24 @@ function render(){
 }
 function go(v){ location.hash=v; render(); }
 
-document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>{
+  go(b.dataset.view);
+  if(window.innerWidth<=880) setSidebar(false);
+}));
 window.addEventListener('hashchange',render);
+
+function setSidebar(open){ document.querySelector('.app').classList.toggle('sidebar-open',open); }
+function toggleSidebar(){ setSidebar(!document.querySelector('.app').classList.contains('sidebar-open')); }
+document.getElementById('sidebarOpen').addEventListener('click',toggleSidebar);
+document.getElementById('sidebarClose').addEventListener('click',()=>setSidebar(false));
+document.getElementById('scrim').addEventListener('click',()=>setSidebar(false));
+setSidebar(window.innerWidth>880);
+
+function updateSidebarFoot(){
+  const el=document.getElementById('sidebarFoot');
+  if(!el)return;
+  el.textContent=bank.length?`${bank.length} questions loaded`:'No questions loaded yet';
+}
 
 function renderDashboard(){
   const sections=getSections();
@@ -224,6 +396,10 @@ function renderDashboard(){
     <div class="bar"><i style="width:${progressFor(list)}%"></i></div>
     <div class="mini" style="margin-top:8px">${practicedCount(list)} of ${list.length} practiced</div></div>`;
   }).join('') || '<div class="card empty">No questions loaded yet.</div>'}</div>
+  <h2 class="section-title">Recent exams</h2>
+  <div class="card">${renderRecentExamsList(3)}
+    <div class="actions" style="margin-top:12px"><button class="btn" onclick="go('history')">View full history</button></div>
+  </div>
   <h2 class="section-title">GitHub question bank</h2>
   <div class="card">
     <div id="syncStatus">Source: <b>questions/index.json</b>${lastSync?` · Last successful sync: ${lastSync.toLocaleString()}`:''}</div>
@@ -265,15 +441,28 @@ function startExam(customList=null){
   if(!bank.length){toast('No questions are loaded. Refresh from GitHub first.','error');return;}
   let list=customList||[...bank];
   let answerMode=settings.showAnswerImmediately?'immediate':'finish';
+  let label='Full question bank', sectionFilter='', categoryFilter='';
+  if(customList){
+    label='Mistakes practice';
+  }
   if(!customList){
     const s=document.getElementById('examSection').value,c=document.getElementById('examCategory').value,n=Math.max(1,Number(document.getElementById('examCount').value)||1);
     answerMode=document.getElementById('answerMode').value;
+    sectionFilter=s;categoryFilter=c;
     list=list.filter(q=>(!s||q.section===s)&&(!c||q.category===c));
     if(!list.length){toast('No questions match those filters.','error');return;}
     if(settings.shuffleQuestions) shuffle(list);
     list=list.slice(0,Math.min(n,list.length));
+    if(settings.shuffleOptions){
+      list=list.map(q=>{
+        const pairs=q.options.map((text,index)=>({text,index}));
+        shuffle(pairs);
+        return {...q,options:pairs.map(x=>x.text),correctIndex:pairs.findIndex(x=>x.index===q.correctIndex)};
+      });
+    }
+    label=[s||'All sections',c||'All categories'].join(' · ');
   }
-  exam={list,index:0,answers:{},started:Date.now(),minutes:customList?0:(Number(document.getElementById('examMinutes').value)||0),answerMode,submitted:false};
+  exam={list,index:0,answers:{},started:Date.now(),minutes:customList?0:(Number(document.getElementById('examMinutes').value)||0),answerMode,submitted:false,label,sectionFilter,categoryFilter};
   if(exam.minutes>0) startTimer(exam.minutes*60);
   renderQuiz();
 }
@@ -284,7 +473,15 @@ function startTimer(sec){
     if(!exam)return clearInterval(timerId);
     const left=Math.max(0,sec-Math.floor((Date.now()-exam.started)/1000));
     const t=document.getElementById('timer');if(t)t.textContent=formatTime(left);
-    if(left<=0){clearInterval(timerId);submitExam(true);}
+    if(left<=0){
+      clearInterval(timerId);
+      if(settings.autoSubmit) submitExam(true);
+      else {
+        const t=document.getElementById('timer');
+        if(t)t.textContent='00:00';
+        toast('Time is up. Review your answers and submit the exam.','error');
+      }
+    }
   },250);
 }
 function formatTime(s){s=Math.max(0,Math.floor(s));return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;}
@@ -345,30 +542,98 @@ function submitExam(auto){
   });
   saveState();
   const unanswered=exam.list.filter(q=>exam.answers[q.id]===undefined).length;
-  const result={total:exam.list.length,answered:exam.list.length-unanswered,correct,unanswered,accuracy:pct(correct,exam.list.length-unanswered),list:exam.list,answers:exam.answers,auto};
+  const durationSec=Math.round((Date.now()-exam.started)/1000);
+  const result={
+    id:'exam_'+Date.now()+'_'+Math.random().toString(36).slice(2,8),
+    date:new Date().toISOString(),
+    label:exam.label||'Exam',
+    sectionFilter:exam.sectionFilter||'',
+    categoryFilter:exam.categoryFilter||'',
+    total:exam.list.length,
+    answered:exam.list.length-unanswered,
+    correct,
+    unanswered,
+    accuracy:pct(correct,exam.list.length-unanswered),
+    durationSec,
+    list:exam.list,
+    answers:exam.answers,
+    auto
+  };
   exam=null;
-  sessionStorage.setItem('med64_last_result',JSON.stringify(result));
-  location.hash='results';
-  render();
+  localStorage.setItem(CONFIG.lastResultKey,JSON.stringify(result));
+  saveHistory(result);
+  go('results');
+}
+function saveHistory(entry){
+  const hist=loadJSON(CONFIG.historyKey,[]);
+  hist.unshift(entry);
+  if(hist.length>200) hist.length=200;
+  localStorage.setItem(CONFIG.historyKey,JSON.stringify(hist));
+}
+function renderRecentExamsList(n){
+  const hist=loadJSON(CONFIG.historyKey,[]).slice(0,n);
+  if(!hist.length) return '<div class="empty">No exams completed yet.</div>';
+  return hist.map(h=>`<div class="progress-row" style="grid-template-columns:1fr 100px 90px 90px">
+    <div><b>${esc(h.label||'Exam')}</b><div class="mini">${new Date(h.date).toLocaleString()}</div></div>
+    <span class="pill">${h.correct}/${h.total}</span>
+    <span>${h.accuracy}% acc.</span>
+    <button class="btn" onclick="viewHistoryResult('${h.id}')">Review</button>
+  </div>`).join('');
+}
+function viewHistoryResult(id){
+  const hist=loadJSON(CONFIG.historyKey,[]);
+  const r=hist.find(h=>h.id===id);
+  if(!r){toast('That exam result is no longer saved on this browser.','error');return;}
+  localStorage.setItem(CONFIG.lastResultKey,JSON.stringify(r));
+  go('results');
+}
+function clearHistory(){
+  if(confirm('Delete all saved exam history on this browser? This cannot be undone.')){
+    localStorage.removeItem(CONFIG.historyKey);
+    render();
+    toast('Exam history cleared.','ok');
+  }
+}
+function renderHistory(){
+  const hist=loadJSON(CONFIG.historyKey,[]);
+  const avgAcc=hist.length?Math.round(hist.reduce((s,h)=>s+h.accuracy,0)/hist.length):0;
+  const bestAcc=hist.length?Math.max(...hist.map(h=>h.accuracy)):0;
+  const stats=`<div class="grid stats">
+    <div class="card stat"><div class="label">Exams taken</div><div class="value">${hist.length}</div></div>
+    <div class="card stat"><div class="label">Average accuracy</div><div class="value">${avgAcc}%</div></div>
+    <div class="card stat"><div class="label">Best accuracy</div><div class="value">${bestAcc}%</div></div>
+    <div class="card stat"><div class="label">Last exam</div><div class="value" style="font-size:16px">${hist.length?new Date(hist[0].date).toLocaleDateString():'—'}</div></div>
+  </div>`;
+  const rows=hist.map(h=>`<div class="category-card">
+    <div class="category-head">
+      <div><b>${esc(h.label||'Exam')}</b>
+      <div class="mini">${new Date(h.date).toLocaleString()} · ${h.durationSec?formatTime(h.durationSec)+' taken':'no timer'}${h.auto?' · time expired (auto-submitted)':''}</div></div>
+      <span class="pill">${h.correct}/${h.total} correct · ${h.accuracy}% acc.</span>
+    </div>
+    <div class="bar" style="margin-top:10px"><i style="width:${h.accuracy}%"></i></div>
+    <div class="mini" style="margin-top:8px">${h.answered} answered · ${h.unanswered} unanswered</div>
+    <div class="actions" style="margin-top:10px"><button class="btn" onclick="viewHistoryResult('${h.id}')">Review this exam</button></div>
+  </div>`).join('');
+  const body=`${stats}
+  <h2 class="section-title">All exams</h2>
+  <div class="card"><div class="category-head"><strong>${hist.length} exam${hist.length===1?'':'s'} recorded</strong><span class="mini">Stored locally in this browser only.</span></div>
+  ${hist.length?`<div class="actions" style="margin-top:12px"><button class="btn danger" onclick="clearHistory()">Clear history</button></div>`:''}</div>
+  <div style="margin-top:16px">${rows||'<div class="card empty">No exams completed yet. Start an exam to build your history.</div>'}</div>`;
+  document.getElementById('app').innerHTML=layout('Exam History','Every exam you finish is logged here with its score and accuracy.',body);
 }
 function renderResults(){
-  const r=loadJSON('med64_last_result',null);
+  const r=loadJSON(CONFIG.lastResultKey,null);
   if(!r){go('dashboard');return;}
   const rows=r.list.map((q,i)=>{
     const a=r.answers[q.id], ok=a===q.correctIndex;
     return `<div class="category-card"><div><b>${i+1}. ${esc(q.question)}</b></div><div class="mini" style="margin-top:6px">${esc(q.section)} · ${esc(q.category)}</div>
-    <div class="review ${ok?'good':'bad'}">${a===undefined?'Unanswered':ok?'Correct':'Incorrect'} · Your answer: ${a===undefined?'—':esc(q.options[a])}<br>Correct answer: <b>${esc(q.options[q.correctIndex])}</b><br>${esc(q.explanation||'No explanation provided.')}</div></div>`;
+    <div class="review ${ok?'good':'bad'}">${a===undefined?'Unanswered':ok?'Correct':'Incorrect'} · Your answer: ${a===undefined?'—':esc(q.options[a])}<br>Correct answer: <b>${esc(q.options[q.correctIndex])}</b><br>${esc(q.explanation||'')}</div></div>`;
   }).join('');
-  const body=`<div class="card" style="margin-bottom:16px;text-align:center;border:2px solid var(--primary)">
-    <div class="pill">EXAM FINISHED</div>
-    <h2 style="font-size:30px;margin:12px 0 6px">Your result</h2>
-    <div style="font-size:42px;font-weight:900;color:var(--primary)">${r.correct} / ${r.total}</div>
-    <div class="sub" style="font-size:16px;margin-top:4px">${r.accuracy}% accuracy · ${r.answered} answered · ${r.unanswered} unanswered</div>
-  </div>
-  <div class="grid stats"><div class="card stat"><div class="label">Score</div><div class="value">${r.correct}/${r.total}</div></div><div class="card stat"><div class="label">Accuracy</div><div class="value">${r.accuracy}%</div></div><div class="card stat"><div class="label">Answered</div><div class="value">${r.answered}</div></div><div class="card stat"><div class="label">Unanswered</div><div class="value">${r.unanswered}</div></div></div>
-  <h2 class="section-title">Question-by-question review</h2><div>${rows}</div>
-  <div class="actions" style="margin-top:14px"><button class="btn primary" onclick="go('exam')">New Exam</button><button class="btn" onclick="go('progress')">View Progress</button><button class="btn" onclick="go('mistakes')">View Mistakes</button></div>`;
-  document.getElementById('app').innerHTML=layout('Exam Results',r.auto?'Time expired — exam submitted automatically.':'Exam completed — here is your result.',body);
+  const meta=`<div class="mini">${esc(r.label||'Exam')} · ${r.date?new Date(r.date).toLocaleString():''}${r.durationSec?' · '+formatTime(r.durationSec)+' taken':''}</div>`;
+  const body=`${meta}
+  <div class="grid stats" style="margin-top:10px"><div class="card stat"><div class="label">Score</div><div class="value">${r.correct}/${r.total}</div></div><div class="card stat"><div class="label">Accuracy</div><div class="value">${r.accuracy}%</div></div><div class="card stat"><div class="label">Answered</div><div class="value">${r.answered}</div></div><div class="card stat"><div class="label">Unanswered</div><div class="value">${r.unanswered}</div></div></div>
+  <h2 class="section-title">Full review</h2><div>${rows}</div><div class="actions" style="margin-top:14px"><button class="btn primary" onclick="go('exam')">New Exam</button><button class="btn" onclick="go('history')">Exam History</button><button class="btn" onclick="go('progress')">View Progress</button></div>`;
+  document.getElementById('app').innerHTML=layout('Exam Results',r.auto?'Time expired — exam submitted automatically.':'Exam completed.',body);
 }
 
 function renderProgress(){
@@ -401,7 +666,7 @@ function renderMistakes(){
 
 function renderBank(){
   const sections=getSections();
-  const body=`<div class="card"><div class="filters"><div class="field"><label>Search</label><input id="bankSearch" oninput="filterBank()" placeholder="Search question, ID or category"></div><div class="field"><label>Section</label><select id="bankSection" onchange="filterBank()"><option value="">All</option>${sections.map(s=>`<option>${esc(s)}</option>`).join('')}</select></div><div class="field"><label>Category</label><select id="bankCategory" onchange="filterBank()"><option value="">All</option>${getCategories().map(c=>`<option>${esc(c)}</option>`).join('')}</select></div><div class="field"><label>Source</label><select id="bankSource" onchange="filterBank()"><option value="">All files</option>${sourceFiles.map(f=>`<option>${esc(f)}</option>`).join('')}</select></div></div></div>
+  const body=`<div class="card"><div class="actions" style="margin-bottom:12px"><button class="btn primary" onclick="go('import')">+ Add questions</button><span class="mini">Built-in questions are saved locally in this browser.</span></div><div class="filters"><div class="field"><label>Search</label><input id="bankSearch" oninput="filterBank()" placeholder="Search question, ID or category"></div><div class="field"><label>Section</label><select id="bankSection" onchange="filterBank()"><option value="">All</option>${sections.map(s=>`<option>${esc(s)}</option>`).join('')}</select></div><div class="field"><label>Category</label><select id="bankCategory" onchange="filterBank()"><option value="">All</option>${getCategories().map(c=>`<option>${esc(c)}</option>`).join('')}</select></div><div class="field"><label>Source</label><select id="bankSource" onchange="filterBank()"><option value="">All files</option>${sourceFiles.map(f=>`<option>${esc(f)}</option>`).join('')}</select></div></div></div>
   <div class="card" style="margin-top:16px"><div class="table-wrap"><table class="table"><thead><tr><th>ID</th><th>Section</th><th>Category</th><th>Question</th><th>Progress</th></tr></thead><tbody id="bankRows"></tbody></table></div></div>`;
   document.getElementById('app').innerHTML=layout('Question Bank','Read-only view of the questions currently loaded from GitHub.',body);
   filterBank();
@@ -414,12 +679,118 @@ function filterBank(){
 }
 
 function renderImport(){
-  const body=`<div class="grid two"><div class="card"><h3 style="margin-top:0">Upload a JSON file</h3><div class="field"><label>Choose JSON</label><input id="jsonFile" type="file" accept=".json,application/json"></div><div class="mini" style="margin-top:8px">Use this to test a new question bank in your browser. It does not change GitHub automatically.</div><div class="actions" style="margin-top:12px"><button class="btn primary" onclick="previewUploaded()">Preview</button></div></div>
-  <div class="card"><h3 style="margin-top:0">Paste JSON</h3><div class="field"><textarea id="jsonText" placeholder='[{"id":"pharma-001","section":"Pharmacology","category":"Autonomic","question":"...","options":["A","B","C","D"],"correctIndex":1,"explanation":"..."}]'></textarea></div><div class="actions"><button class="btn primary" onclick="previewPasted()">Preview</button><button class="btn" onclick="downloadTemplate()">Download template</button></div></div></div>
-  <div id="importPreview" class="card" style="margin-top:16px"><div class="empty">Preview your JSON here before replacing the browser's current bank.</div></div>
-  <div class="card" style="margin-top:16px"><h3 style="margin-top:0">How to update everyone</h3><ol><li>Edit or upload your JSON file into the repository's <b>questions/</b> folder on GitHub.</li><li>Make sure <b>questions/index.json</b> lists the filename.</li><li>Commit the change.</li><li>Users click <b>Refresh from GitHub</b>; Vercel will also serve the updated files after deployment/CDN refresh.</li></ol><div class="notice">This website intentionally does not contain a GitHub access token. A browser-side GitHub token would expose your repository credentials.</div></div>`;
-  document.getElementById('app').innerHTML=layout('Upload / Update Questions','Easy JSON testing plus safe GitHub-based updates for everyone.',body);
+  const body=`<div class="grid two">
+    <div class="card">
+      <h3 style="margin-top:0">Add a question built in</h3>
+      <div class="field"><label>Question ID</label><input id="newQId" placeholder="e.g. cardio-101"></div>
+      <div class="grid two" style="margin-top:10px">
+        <div class="field"><label>Section</label><input id="newQSection" placeholder="e.g. Cardiology"></div>
+        <div class="field"><label>Category</label><input id="newQCategory" placeholder="e.g. Arrhythmias"></div>
+      </div>
+      <div class="field" style="margin-top:10px"><label>Question</label><textarea id="newQText" style="min-height:90px;font-family:var(--font-sans);font-size:14px" placeholder="Write the question…"></textarea></div>
+      <div class="field" style="margin-top:10px"><label>Answer options</label>
+        <input id="newQOpt0" placeholder="Option A" style="margin-bottom:7px">
+        <input id="newQOpt1" placeholder="Option B" style="margin-bottom:7px">
+        <input id="newQOpt2" placeholder="Option C" style="margin-bottom:7px">
+        <input id="newQOpt3" placeholder="Option D">
+      </div>
+      <div class="grid two" style="margin-top:10px">
+        <div class="field"><label>Correct answer</label><select id="newQCorrect"><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select></div>
+        <div class="field"><label>Explanation (optional)</label><input id="newQExplanation" placeholder="Why is this correct?"></div>
+      </div>
+      <div class="actions" style="margin-top:12px">
+        <button class="btn primary" onclick="addBuiltInQuestion()">Add question</button>
+        <button class="btn" onclick="clearQuestionForm()">Clear</button>
+      </div>
+      <div class="mini" style="margin-top:10px">Questions added here are saved in this browser and remain available after refreshing the GitHub bank.</div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Add multiple questions with JSON</h3>
+      <div class="field"><label>Upload JSON</label><input id="jsonFile" type="file" accept=".json,application/json"></div>
+      <div class="actions" style="margin-top:10px"><button class="btn" onclick="previewUploaded()">Preview</button></div>
+      <div class="field" style="margin-top:14px"><label>Or paste JSON</label><textarea id="jsonText" placeholder='[{"id":"pharma-001","section":"Pharmacology","category":"Autonomic","question":"…","options":["A","B","C","D"],"correctIndex":1,"explanation":"…"}]'></textarea></div>
+      <div class="actions"><button class="btn" onclick="previewPasted()">Preview</button><button class="btn" onclick="downloadTemplate()">Download template</button></div>
+    </div>
+  </div>
+
+  <div id="importPreview" class="card" style="margin-top:16px"><div class="empty">Add a question above, or preview a JSON set here.</div></div>
+
+  <div class="card" style="margin-top:16px">
+    <h3 style="margin-top:0">Local questions</h3>
+    <div class="category-head"><span>${localQuestions.length} question${localQuestions.length===1?'':'s'} added in this browser</span>${localQuestions.length?'<button class="btn danger" onclick="clearLocalQuestions()">Remove local questions</button>':''}</div>
+    ${localQuestions.length?`<div style="margin-top:12px">${localQuestions.slice().reverse().slice(0,20).map(q=>`<div class="category-card"><div class="category-head"><b>${esc(q.id)}</b><button class="btn" onclick="removeLocalQuestion(${JSON.stringify(q.id).replace(/</g,"\u003c")})">Remove</button></div><div class="mini">${esc(q.section)} · ${esc(q.category)}</div><div style="margin-top:5px">${esc(q.question)}</div></div>`).join('')}</div>`:'<div class="empty">No built-in questions have been added yet.</div>'}
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h3 style="margin-top:0">How to update everyone</h3>
+    <ol><li>Edit or upload your JSON file into the repository's <b>questions/</b> folder on GitHub.</li><li>Make sure <b>questions/index.json</b> lists the filename.</li><li>Commit the change.</li><li>Users click <b>Refresh from GitHub</b>.</li></ol>
+    <div class="notice">Built-in questions are local to this browser. To make questions available to everyone, add them to the GitHub question bank.</div>
+  </div>`;
+  document.getElementById('app').innerHTML=layout('Upload / Update Questions','Add questions directly in the app or import many questions at once.',body);
 }
+
+function addBuiltInQuestion(){
+  const q=normalizeQuestion({
+    id:document.getElementById('newQId').value,
+    section:document.getElementById('newQSection').value,
+    category:document.getElementById('newQCategory').value,
+    question:document.getElementById('newQText').value,
+    options:[
+      document.getElementById('newQOpt0').value,
+      document.getElementById('newQOpt1').value,
+      document.getElementById('newQOpt2').value,
+      document.getElementById('newQOpt3').value
+    ],
+    correctIndex:Number(document.getElementById('newQCorrect').value),
+    explanation:document.getElementById('newQExplanation').value
+  });
+
+  const error=validateQuestion(q,0);
+  if(error){toast('Cannot add question: '+error,'error');return}
+  if(bank.some(x=>x.id===q.id) || localQuestions.some(x=>x.id===q.id)){
+    toast('A question with this ID already exists. Use a unique ID.','error');return;
+  }
+
+  q.source='Built in';
+  localQuestions.push(q);
+  bank.push(q);
+  localStorage.setItem(CONFIG.localQuestionsKey,JSON.stringify(localQuestions));
+  localStorage.setItem(CONFIG.cacheKey,JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
+  clearQuestionForm();
+  render();
+  toast(`Question "${q.id}" added successfully.`,'ok');
+}
+
+function clearQuestionForm(){
+  ['newQId','newQSection','newQCategory','newQText','newQOpt0','newQOpt1','newQOpt2','newQOpt3','newQExplanation'].forEach(id=>{
+    const el=document.getElementById(id); if(el) el.value='';
+  });
+  const c=document.getElementById('newQCorrect'); if(c)c.value='0';
+}
+
+function removeLocalQuestion(id){
+  if(!confirm(`Remove local question "${id}" from this browser?`))return;
+  localQuestions=localQuestions.filter(q=>q.id!==id);
+  bank=bank.filter(q=>q.id!==id);
+  localStorage.setItem(CONFIG.localQuestionsKey,JSON.stringify(localQuestions));
+  localStorage.setItem(CONFIG.cacheKey,JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
+  render();
+  toast('Local question removed.','ok');
+}
+
+function clearLocalQuestions(){
+  if(!localQuestions.length)return;
+  if(!confirm(`Remove all ${localQuestions.length} locally added questions from this browser?`))return;
+  const ids=new Set(localQuestions.map(q=>q.id));
+  localQuestions=[];
+  bank=bank.filter(q=>!ids.has(q.id));
+  localStorage.setItem(CONFIG.localQuestionsKey,JSON.stringify(localQuestions));
+  localStorage.setItem(CONFIG.cacheKey,JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
+  render();
+  toast('Local questions removed.','ok');
+}
+
 async function previewUploaded(){
   const f=document.getElementById('jsonFile').files[0];if(!f){toast('Choose a JSON file first.','error');return}
   try{const text=await f.text();showImportPreview(JSON.parse(text));}catch(e){toast('Invalid JSON: '+e.message,'error');}
@@ -430,11 +801,32 @@ function showImportPreview(data){
   if(!Array.isArray(list)){toast('JSON must be an array or { "questions": [...] }.','error');return}
   const errors=validateBank(list);
   const normalized=list.map(q=>normalizeQuestion(q));
-  document.getElementById('importPreview').innerHTML=`<h3 style="margin-top:0">Preview: ${normalized.length} questions</h3>${errors.length?`<div class="notice error">${esc(errors.slice(0,15).join('\\n'))}</div>`:'<div class="notice ok">Validation passed.</div>'}<div class="mini" style="margin:12px 0">First 10 questions:</div><div>${normalized.slice(0,10).map(q=>`<div class="category-card"><b>${esc(q.id)}</b> · ${esc(q.section)} · ${esc(q.category)}<br>${esc(q.question)}</div>`).join('')}</div>${!errors.length?`<button class="btn primary" onclick='usePreviewBank(${JSON.stringify(normalized).replace(/</g,"\\u003c")})'>Use this bank in this browser</button>`:''}`;
+  document.getElementById('importPreview').innerHTML=`<h3 style="margin-top:0">Preview: ${normalized.length} questions</h3>${errors.length?`<div class="notice error">${esc(errors.slice(0,15).join('\n'))}</div>`:'<div class="notice ok">Validation passed.</div>'}<div class="mini" style="margin:12px 0">First 10 questions:</div><div>${normalized.slice(0,10).map(q=>`<div class="category-card"><b>${esc(q.id)}</b> · ${esc(q.section)} · ${esc(q.category)}<br>${esc(q.question)}</div>`).join('')}</div>${!errors.length?`<div class="actions" style="margin-top:12px"><button class="btn primary" onclick='addPreviewQuestions(${JSON.stringify(normalized).replace(/</g,"\\u003c")})'>Add to this browser</button><button class="btn" onclick='replaceWithPreviewBank(${JSON.stringify(normalized).replace(/</g,"\\u003c")})'>Replace browser bank</button></div>`:''}`;
 }
-function usePreviewBank(list){
+function addPreviewQuestions(list){
+  const errors=validateBank(list);if(errors.length){toast('Cannot add invalid questions.','error');return}
+  const existing=new Set(bank.map(q=>q.id));
+  const added=[];
+  for(const raw of list){
+    const q=normalizeQuestion(raw,'Built in');
+    if(existing.has(q.id))continue;
+    existing.add(q.id);added.push(q);
+  }
+  if(!added.length){toast('No new questions were added. IDs already exist.','error');return}
+  localQuestions.push(...added);
+  bank.push(...added);
+  localStorage.setItem(CONFIG.localQuestionsKey,JSON.stringify(localQuestions));
+  localStorage.setItem(CONFIG.cacheKey,JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
+  render();
+  toast(`Added ${added.length} new question${added.length===1?'':'s'} to this browser.`,'ok');
+}
+function replaceWithPreviewBank(list){
   const errors=validateBank(list);if(errors.length){toast('Cannot use invalid bank.','error');return}
-  bank=list;sourceFiles=['local preview'];lastSync=new Date();render();toast(`Loaded ${bank.length} preview questions in this browser. GitHub was not changed.`,'ok');
+  bank=list;sourceFiles=['local preview'];lastSync=new Date();
+  localQuestions=list.filter(q=>q.source==='Built in');
+  localStorage.setItem(CONFIG.localQuestionsKey,JSON.stringify(localQuestions));
+  localStorage.setItem(CONFIG.cacheKey,JSON.stringify({updatedAt:new Date().toISOString(),sourceFiles,bank}));
+  render();toast(`Loaded ${bank.length} preview questions in this browser.`,'ok');
 }
 function downloadTemplate(){
   const sample=[{id:"pharma-001",section:"Pharmacology",category:"Autonomic Drugs",question:"Which receptor is primarily activated by norepinephrine?",options:["Alpha-1","Beta-2","M2","Nicotinic"],correctIndex:0,explanation:"Norepinephrine strongly activates alpha-1 receptors."}];
@@ -448,8 +840,8 @@ function renderSettings(){
   <label><input type="checkbox" id="sAuto" ${settings.autoSubmit?'checked':''}> Auto-submit when timer reaches zero</label><br><br>
   <label><input type="checkbox" id="sShuffleQ" ${settings.shuffleQuestions?'checked':''}> Shuffle questions when starting an exam</label><br><br>
   <label><input type="checkbox" id="sShuffleO" ${settings.shuffleOptions?'checked':''}> Shuffle options (disabled by default)</label>
-  <div class="actions" style="margin-top:16px"><button class="btn primary" onclick="saveSettings()">Save settings</button><button class="btn" onclick="exportProgress()">Export my progress</button><button class="btn" onclick="exportBank()">Export current bank</button></div></div>
-  <div class="card" style="margin-top:16px"><h3 style="margin-top:0">About storage</h3><p class="mini">The question bank comes from GitHub. Your progress, accuracy and mistakes are stored only in this browser using localStorage. No account or external database is used.</p></div>`;
+  <div class="actions" style="margin-top:16px"><button class="btn primary" onclick="saveSettings()">Save settings</button><button class="btn" onclick="exportProgress()">Export my progress</button><button class="btn" onclick="exportBank()">Export current bank</button><button class="btn" onclick="exportHistory()">Export exam history</button><button class="btn danger" onclick="clearHistory()">Clear exam history</button></div></div>
+  <div class="card" style="margin-top:16px"><h3 style="margin-top:0">About storage</h3><p class="mini">The question bank comes from GitHub. Your progress, accuracy, mistakes and exam history are stored only in this browser using localStorage. No account or external database is used.</p></div>`;
   document.getElementById('app').innerHTML=layout('Settings','Personal browser settings and backups.',body);
 }
 function saveSettings(){
@@ -461,6 +853,7 @@ function saveSettings(){
 }
 function exportProgress(){downloadBlob(JSON.stringify({exportedAt:new Date().toISOString(),progress},null,2),'med64-progress.json','application/json');}
 function exportBank(){downloadBlob(JSON.stringify(bank,null,2),'med64-current-question-bank.json','application/json');}
+function exportHistory(){downloadBlob(JSON.stringify({exportedAt:new Date().toISOString(),history:loadJSON(CONFIG.historyKey,[])},null,2),'med64-exam-history.json','application/json');}
 
 document.addEventListener('DOMContentLoaded',()=>{
   render();

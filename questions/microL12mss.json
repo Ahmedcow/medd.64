@@ -1,0 +1,481 @@
+[
+  {
+    "id": "mss-001",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Substances naturally derived or synthetically prepared that attack selectively the bacteria:",
+    "options": [
+      "Antiviral drugs",
+      "Antibiotics",
+      "Antifungal",
+      "Antiprotozoal",
+      "Antihelminthic"
+    ],
+    "correctIndex": 1,
+    "explanation": "Antibiotics are substances, naturally derived or synthetically prepared, that selectively attack bacteria."
+  },
+  {
+    "id": "mss-002",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following is NOT a mechanism of action of antibiotics?",
+    "options": [
+      "Cell wall synthesis",
+      "Cell membrane permeability",
+      "Active transport",
+      "Protein synthesis",
+      "Destruction of organelles"
+    ],
+    "correctIndex": 4,
+    "explanation": "Bacteria lack membrane-bound organelles, so 'destruction of organelles' is not a mechanism of antibiotic action; the others are recognized targets."
+  },
+  {
+    "id": "mss-003",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following is a desired property of antibiotics?",
+    "options": [
+      "Bacteriostatic rather than bactericidal",
+      "Allergic",
+      "Water insoluble",
+      "Narrow spectrum of activity",
+      "Cause inhibition without injuring host cells"
+    ],
+    "correctIndex": 4,
+    "explanation": "A desired antibiotic should show selective toxicity, inhibiting the pathogen without injuring host cells."
+  },
+  {
+    "id": "mss-004",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the definition of antimicrobial agents?",
+    "options": [
+      "Chemical that kill or inhibit growth of microorganisms",
+      "Chemical substances that enhance the growth of microorganisms",
+      "Chemical substances that have no action on microorganisms",
+      "Chemical substances that kill viruses"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antimicrobial agents are chemicals that kill or inhibit the growth of microorganisms."
+  },
+  {
+    "id": "mss-005",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following is a desired property of antibiotics?",
+    "options": [
+      "Inducing bacterial resistance",
+      "Short plasma half-life",
+      "Limited tissue distribution",
+      "Selective toxicity"
+    ],
+    "correctIndex": 3,
+    "explanation": "Selective toxicity, harming the microbe without harming the host, is a key desired property of an ideal antibiotic."
+  },
+  {
+    "id": "mss-006",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "How do antibiotics mediate their action?",
+    "options": [
+      "Stimulation of cell growth",
+      "Inhibition of protein synthesis and nucleic acid synthesis",
+      "Enhancement of bacterial resistance mechanisms",
+      "Inhibition of host cell functions"
+    ],
+    "correctIndex": 1,
+    "explanation": "Antibiotics act by inhibiting essential bacterial processes such as protein synthesis and nucleic acid synthesis, among other targets."
+  },
+  {
+    "id": "mss-007",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What are extrachromosomal genetic elements in bacteria that often carry genes for resistance to antimicrobial drugs?",
+    "options": [
+      "Transposons",
+      "Plasmids",
+      "Ribosomes",
+      "Lysosomes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Plasmids are extrachromosomal DNA elements that commonly carry antimicrobial resistance genes and can be transferred between bacteria."
+  },
+  {
+    "id": "mss-008",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the definition of antimicrobial agents?",
+    "options": [
+      "Chemical that kill or inhibit growth of microorganisms",
+      "Chemical substances that enhance the growth of microorganisms",
+      "Chemical substances that have no action on microorganisms",
+      "Chemical substances that kill viruses"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antimicrobial agents are chemicals that kill or inhibit the growth of microorganisms."
+  },
+  {
+    "id": "mss-009",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following is a desired property of antibiotics?",
+    "options": [
+      "Selective toxicity",
+      "Inducing bacterial resistance",
+      "Short plasma half-life",
+      "Limited tissue distribution"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selective toxicity is a key desired property of an ideal antibiotic, allowing it to harm the pathogen without harming the host."
+  },
+  {
+    "id": "mss-010",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "How do antibiotics mediate their action?",
+    "options": [
+      "Inhibition of cell wall synthesis, cell membrane permeability, active transport, protein synthesis, and nucleic acid synthesis",
+      "Stimulation of cell growth",
+      "Enhancement of bacterial resistance mechanisms",
+      "Inhibition of host cell functions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antibiotics act through several mechanisms, including inhibition of cell wall synthesis, membrane permeability, active transport, protein synthesis, and nucleic acid synthesis."
+  },
+  {
+    "id": "mss-011",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the main purpose of antibiotic combination therapy?",
+    "options": [
+      "To potentially produce a synergistic effect",
+      "To reduce the effectiveness of each antibiotic",
+      "To increase the development of antibacterial resistance",
+      "To simplify treatment regimens"
+    ],
+    "correctIndex": 0,
+    "explanation": "Combination therapy is used mainly to achieve a synergistic effect between antibiotics."
+  },
+  {
+    "id": "mss-012",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What are extrachromosomal genetic elements in bacteria that often carry genes for resistance to antimicrobial drugs?",
+    "options": [
+      "Plasmids",
+      "Transposons",
+      "Ribosomes",
+      "Lysosomes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plasmids are extrachromosomal DNA elements that commonly carry antimicrobial resistance genes."
+  },
+  {
+    "id": "mss-013",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which enzyme carried by plasmids is effective against penicillins and cephalosporins?",
+    "options": [
+      "Acetyl transferase",
+      "β-lactamase",
+      "Kinase",
+      "Polymerase"
+    ],
+    "correctIndex": 1,
+    "explanation": "β-lactamase, often plasmid-encoded, hydrolyzes the beta-lactam ring, inactivating penicillins and cephalosporins."
+  },
+  {
+    "id": "mss-014",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the function of transposons in transferring drug resistance genes?",
+    "options": [
+      "Enhancing bacterial growth",
+      "Destroying antibiotics",
+      "Inactivating enzymes",
+      "Carrying and transferring drug resistance genes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Transposons are mobile genetic elements that carry and transfer drug resistance genes, including between plasmids and chromosomes."
+  },
+  {
+    "id": "mss-015",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "How can organisms resist antimicrobial agents through non-genetic (biochemical) mechanisms?",
+    "options": [
+      "Increasing permeability, enzyme activation, unchanged target site, unchanged metabolic pathway",
+      "Reducing permeability, enzyme inactivation, altered target site, altered metabolic pathway",
+      "Increasing permeability, enzyme inactivation, altered target site, altered metabolic pathway",
+      "Reducing permeability, enzyme activation, unchanged target site, altered metabolic pathway"
+    ],
+    "correctIndex": 1,
+    "explanation": "Biochemical resistance mechanisms include reduced drug permeability, enzymatic inactivation of the drug, altered target sites, and altered metabolic pathways."
+  },
+  {
+    "id": "mss-016",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which specific mutation can lead to streptomycin resistance by affecting the 30S ribosomal subunit?",
+    "options": [
+      "Mutation in P24",
+      "Mutation in P12",
+      "Mutation in P36",
+      "Mutation in P48"
+    ],
+    "correctIndex": 1,
+    "explanation": "A mutation affecting the P12 protein of the 30S ribosomal subunit alters the streptomycin binding site, conferring resistance."
+  },
+  {
+    "id": "mss-017",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the frequency of transmission like in plasmid resistance compared to chromosomal resistance?",
+    "options": [
+      "Low frequency in plasmid resistance, high frequency in chromosomal resistance",
+      "Equal frequency in both types of resistance",
+      "High frequency in plasmid resistance, low frequency in chromosomal resistance",
+      "No transmission in either type of resistance"
+    ],
+    "correctIndex": 2,
+    "explanation": "Plasmid-mediated resistance is transmitted at a high frequency (e.g., via conjugation), while chromosomal resistance is transmitted at a lower frequency."
+  },
+  {
+    "id": "mss-018",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the primary function of plasmids in bacteria?",
+    "options": [
+      "Carrying genes for drug resistance",
+      "Enhancing cell division",
+      "Producing energy",
+      "Regulating gene expression"
+    ],
+    "correctIndex": 0,
+    "explanation": "One of the primary functions of plasmids is carrying genes for drug resistance, which can be transferred between bacteria."
+  },
+  {
+    "id": "mss-019",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the main purpose of antibiotic combination therapy?",
+    "options": [
+      "To reduce the effectiveness of each antibiotic",
+      "To increase the development of antibacterial resistance",
+      "To potentially produce a synergistic effect",
+      "To simplify treatment regimens"
+    ],
+    "correctIndex": 2,
+    "explanation": "Combination therapy is used mainly to achieve a synergistic effect between antibiotics."
+  },
+  {
+    "id": "mss-020",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following antibiotic classes inhibits cell wall synthesis?",
+    "options": [
+      "Macrolides",
+      "Tetracyclines",
+      "Beta-lactams",
+      "Quinolones"
+    ],
+    "correctIndex": 2,
+    "explanation": "Beta-lactams (e.g., penicillins, cephalosporins) inhibit bacterial cell wall synthesis."
+  },
+  {
+    "id": "mss-021",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Vancomycin belongs to which antibiotic class?",
+    "options": [
+      "Beta-lactams",
+      "Glycopeptides",
+      "Aminoglycosides",
+      "Macrolides"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vancomycin is a glycopeptide antibiotic that inhibits cell wall synthesis by binding D-Ala-D-Ala."
+  },
+  {
+    "id": "mss-022",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which antibiotic class targets bacterial cell membranes?",
+    "options": [
+      "Polymyxins",
+      "Rifampin",
+      "Sulfonamides",
+      "Macrolides"
+    ],
+    "correctIndex": 0,
+    "explanation": "Polymyxins disrupt the integrity of the bacterial cell membrane."
+  },
+  {
+    "id": "mss-023",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following is a DNA Gyrase Inhibitor?",
+    "options": [
+      "Quinolones",
+      "Rifampin",
+      "Clindamycin",
+      "Doxycycline"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quinolones inhibit DNA gyrase (topoisomerase II), blocking bacterial DNA replication."
+  },
+  {
+    "id": "mss-024",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Rifampin inhibits which bacterial enzyme?",
+    "options": [
+      "DNA Gyrase",
+      "RNA Polymerase",
+      "30S Ribosome",
+      "Folate Synthase"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rifampin inhibits bacterial DNA-dependent RNA polymerase, blocking RNA synthesis."
+  },
+  {
+    "id": "mss-025",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Macrolides inhibit bacterial protein synthesis by binding to which ribosomal subunit?",
+    "options": [
+      "30S",
+      "50S",
+      "16S",
+      "70S"
+    ],
+    "correctIndex": 1,
+    "explanation": "Macrolides bind to the 50S ribosomal subunit, inhibiting bacterial protein synthesis."
+  },
+  {
+    "id": "mss-026",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following antibiotics inhibits folate synthesis?",
+    "options": [
+      "Sulfamethoxazole",
+      "Gentamicin",
+      "Rifampin",
+      "Polymyxin B"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sulfamethoxazole (a sulfonamide) inhibits bacterial folate synthesis by blocking dihydropteroate synthase."
+  },
+  {
+    "id": "mss-027",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which of the following antibiotics is classified as an aminoglycoside?",
+    "options": [
+      "Azithromycin",
+      "Clindamycin",
+      "Gentamicin",
+      "Doxycycline"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gentamicin is an aminoglycoside antibiotic that binds the 30S ribosomal subunit."
+  },
+  {
+    "id": "mss-028",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Tetracyclines inhibit bacterial protein synthesis by binding to which ribosomal subunit?",
+    "options": [
+      "50S",
+      "30S",
+      "23S",
+      "70S"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tetracyclines bind to the 30S ribosomal subunit, blocking aminoacyl-tRNA attachment."
+  },
+  {
+    "id": "mss-029",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Which antibiotic is a beta-lactam?",
+    "options": [
+      "Doxycycline",
+      "Carbapenem",
+      "Linezolid",
+      "Chloramphenicol"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbapenems are a subclass of beta-lactam antibiotics."
+  },
+  {
+    "id": "mss-030",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the main structural component of the Gram-positive bacterial cell wall?",
+    "options": [
+      "Lipopolysaccharide (LPS)",
+      "Peptidoglycan",
+      "Mycolic acid",
+      "Teichoic acid"
+    ],
+    "correctIndex": 1,
+    "explanation": "Peptidoglycan is the main structural component of the Gram-positive cell wall, present in thick layers."
+  },
+  {
+    "id": "mss-031",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "How do penicillins and cephalosporins weaken the bacterial cell wall?",
+    "options": [
+      "By inhibiting peptidoglycan precursor transport",
+      "By blocking cross-linking of peptidoglycan strands",
+      "By binding to D-Ala-D-Ala on peptidoglycan precursors",
+      "By inhibiting protein synthesis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Penicillins and cephalosporins inhibit transpeptidases, blocking the cross-linking of peptidoglycan strands and weakening the cell wall."
+  },
+  {
+    "id": "mss-032",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "Bacitracin inhibits bacterial cell wall synthesis by:",
+    "options": [
+      "Blocking cross-linking of peptidoglycan strands",
+      "Blocking the transport of peptidoglycan precursors across the membrane",
+      "Binding to ribosomes",
+      "Inhibiting DNA replication"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bacitracin blocks dephosphorylation of the lipid carrier that transports peptidoglycan precursors across the cell membrane."
+  },
+  {
+    "id": "mss-033",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the mechanism of action of vancomycin?",
+    "options": [
+      "Inhibits bacterial ribosome function",
+      "Binds to D-Ala-D-Ala on peptidoglycan precursors, preventing polymerization",
+      "Blocks peptidoglycan precursor transport across the membrane",
+      "Inhibits beta-lactamase enzyme"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vancomycin binds to the D-Ala-D-Ala terminus of peptidoglycan precursors, preventing their polymerization and cross-linking."
+  },
+  {
+    "id": "mss-034",
+    "section": "mss",
+    "category": "Microbiology",
+    "question": "What is the target of penicillins and cephalosporins?",
+    "options": [
+      "Peptidoglycan precursor transport",
+      "Peptidoglycan polymerization",
+      "Cross-linking of peptidoglycan strands",
+      "DNA gyrase"
+    ],
+    "correctIndex": 2,
+    "explanation": "Penicillins and cephalosporins target the transpeptidase enzymes responsible for cross-linking peptidoglycan strands."
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cardio-001",
+    "section": "Cardiology",
+    "category": "Acute Coronary Syndrome",
+    "question": "Which cardiac biomarker is most specific for myocardial injury?",
+    "options": [
+      "CK-MB",
+      "Troponin I",
+      "Myoglobin",
+      "LDH"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cardiac troponins are highly specific biomarkers of myocardial injury."
+  },
+  {
+    "id": "cardio-002",
+    "section": "Cardiology",
+    "category": "Heart Failure",
+    "question": "Which drug class reduces mortality in heart failure with reduced ejection fraction?",
+    "options": [
+      "ACE inhibitors",
+      "Antacids",
+      "Antihistamines",
+      "Antacids with alginate"
+    ],
+    "correctIndex": 0,
+    "explanation": "ACE inhibitors have established mortality benefit in HFrEF."
+  }
+]

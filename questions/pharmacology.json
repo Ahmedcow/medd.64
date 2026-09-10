@@ -1,0 +1,30 @@
+[
+  {
+    "id": "pharma-001",
+    "section": "Pharmacology",
+    "category": "Autonomic Drugs",
+    "question": "Which receptor is primarily activated by norepinephrine in vascular smooth muscle?",
+    "options": [
+      "Alpha-1",
+      "Beta-2",
+      "M2",
+      "Nicotinic"
+    ],
+    "correctIndex": 0,
+    "explanation": "Norepinephrine strongly stimulates alpha-1 receptors, causing vasoconstriction."
+  },
+  {
+    "id": "pharma-002",
+    "section": "Pharmacology",
+    "category": "Autonomic Drugs",
+    "question": "Atropine primarily blocks which receptor type?",
+    "options": [
+      "Muscarinic",
+      "Nicotinic",
+      "Alpha-1",
+      "Beta-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Atropine is a competitive muscarinic acetylcholine receptor antagonist."
+  }
+]

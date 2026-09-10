@@ -1,0 +1,302 @@
+[
+  {
+    "id": "histo-mss-001",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following is NOT a site of hyaline cartilage?",
+    "options": [
+      "Articular surfaces of movable joints",
+      "Costal cartilage",
+      "Trachea",
+      "Epiglottis",
+      "Epiphyseal plates"
+    ],
+    "correctIndex": 3,
+    "explanation": "Epiglottis is composed of elastic cartilage rather than hyaline cartilage[span_0](start_span)[span_0](end_span)."
+  },
+  {
+    "id": "histo-mss-002",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Perichondrium covers all hyaline cartilage EXCEPT",
+    "options": [
+      "Costal cartilage",
+      "Nasal cartilage",
+      "Tracheal cartilage",
+      "Articular cartilage",
+      "Laryngeal cartilage"
+    ],
+    "correctIndex": 3,
+    "explanation": "Articular cartilage lacks a perichondrium[span_1](start_span)[span_1](end_span)."
+  },
+  {
+    "id": "histo-mss-003",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The inner chondrogenic layer of perichondrium is responsible for:",
+    "options": [
+      "Nutrition of cartilage",
+      "Formation of fibroblasts",
+      "Growth of cartilage",
+      "Formation of collagen type I",
+      "Calcification of cartilage"
+    ],
+    "correctIndex": 2,
+    "explanation": "The inner chondrogenic layer is responsible for the growth of cartilage[span_2](start_span)[span_2](end_span)."
+  },
+  {
+    "id": "histo-mss-004",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The outer fibrous layer of perichondrium mainly contains:",
+    "options": [
+      "Chondrocytes and lacunae",
+      "Collagen type II and chondrocytes",
+      "Collagen type I and fibroblasts",
+      "Elastic fibers and chondroblasts",
+      "Osteocytes and collagen type I"
+    ],
+    "correctIndex": 2,
+    "explanation": "The outer fibrous layer mainly contains collagen type I and fibroblasts[span_3](start_span)[span_3](end_span)."
+  },
+  {
+    "id": "histo-mss-005",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Hyaline cartilage in the embryo forms:",
+    "options": [
+      "Permanent skeleton",
+      "Temporary skeleton later replaced by bone",
+      "Elastic skeleton",
+      "Flat bones only",
+      "Membranous bones"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the embryo, hyaline cartilage forms a temporary skeleton later replaced by bone[span_4](start_span)[span_4](end_span)."
+  },
+  {
+    "id": "histo-mss-006",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following statements about perichondrium is TRUE?",
+    "options": [
+      "Covers all hyaline cartilage including articular cartilage",
+      "Contains osteocytes",
+      "Responsible for appositional growth of cartilage",
+      "Lacks blood vessels",
+      "Contains chondrocytes in lacunae"
+    ],
+    "correctIndex": 2,
+    "explanation": "The perichondrium is responsible for appositional growth of cartilage[span_5](start_span)[span_5](end_span)."
+  },
+  {
+    "id": "histo-mss-007",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The outer fibrous layer of perichondrium contains:",
+    "options": [
+      "Chondrocytes and lacunae",
+      "Collagen type II and chondroblasts",
+      "Collagen type I and fibroblasts",
+      "Elastic fibers and chondrocytes",
+      "Osteoblasts and osteocytes"
+    ],
+    "correctIndex": 2,
+    "explanation": "The outer fibrous layer contains collagen type I and fibroblasts[span_6](start_span)[span_6](end_span)."
+  },
+  {
+    "id": "histo-mss-008",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The inner chondrogenic layer of perichondrium contains cells that:",
+    "options": [
+      "Produce blood cells",
+      "Differentiate into chondrocytes",
+      "Produce osteocytes",
+      "Form elastic fibers only",
+      "Form collagen type I only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cells in the inner chondrogenic layer differentiate into chondrocytes[span_7](start_span)[span_7](end_span)."
+  },
+  {
+    "id": "histo-mss-009",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Perichondrium is absent in:",
+    "options": [
+      "Costal cartilage",
+      "Nasal cartilage",
+      "Tracheal cartilage",
+      "Articular cartilage",
+      "Laryngeal cartilage"
+    ],
+    "correctIndex": 3,
+    "explanation": "Articular cartilage does not have a perichondrium[span_8](start_span)[span_8](end_span)."
+  },
+  {
+    "id": "histo-mss-010",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The main function of the outer fibrous layer of perichondrium is:",
+    "options": [
+      "Growth of cartilage",
+      "Formation of chondrocytes",
+      "Support and nutrition of cartilage",
+      "Formation of bone",
+      "Storage of calcium"
+    ],
+    "correctIndex": 2,
+    "explanation": "The main function of the outer fibrous layer is support and nutrition of cartilage[span_9](start_span)[span_9](end_span)."
+  },
+  {
+    "id": "histo-mss-011",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Mature chondrocytes are typically found:",
+    "options": [
+      "In the outer fibrous layer of perichondrium",
+      "In the inner chondrogenic layer of perichondrium",
+      "Deep in the cartilage within lacunae",
+      "On the surface of cartilage",
+      "Inside blood vessels"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mature chondrocytes reside deep in the cartilage within lacunae[span_10](start_span)[span_10](end_span)."
+  },
+  {
+    "id": "histo-mss-012",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Cell nests (isogenous groups) in cartilage are formed by:",
+    "options": [
+      "Fusion of fibroblasts",
+      "Mitotic division of a single chondroblast",
+      "Aggregation of macrophages",
+      "Division of osteoblasts",
+      "Degeneration of chondrocytes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Isogenous groups are formed by the mitotic division of a single chondroblast[span_11](start_span)[span_11](end_span)."
+  },
+  {
+    "id": "histo-mss-013",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The extracellular matrix of hyaline cartilage is basophilic mainly due to:",
+    "options": [
+      "Collagen type I",
+      "Calcium salts",
+      "Elastic fibers",
+      "Proteoglycans",
+      "Keratin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Basophilia in hyaline cartilage matrix is mainly due to proteoglycans[span_12](start_span)[span_12](end_span)."
+  },
+  {
+    "id": "histo-mss-014",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Territorial matrix is characterized by:",
+    "options": [
+      "More collagen and less proteoglycan",
+      "Less collagen and more proteoglycan",
+      "Presence of elastic fibers only",
+      "Absence of ground substance",
+      "Presence of osteocytes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Territorial matrix contains less collagen and more proteoglycan[span_13](start_span)[span_13](end_span)."
+  },
+  {
+    "id": "histo-mss-015",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following is a site of elastic cartilage?",
+    "options": [
+      "Costal cartilage",
+      "Trachea",
+      "Epiphyseal plate",
+      "Epiglottis",
+      "Articular surface"
+    ],
+    "correctIndex": 3,
+    "explanation": "The epiglottis is a site of elastic cartilage[span_14](start_span)[span_14](end_span)."
+  },
+  {
+    "id": "histo-mss-016",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following is a characteristic feature of fibrocartilage?",
+    "options": [
+      "Presence of perichondrium",
+      "Collagen type II only",
+      "Chondrocytes arranged in rows",
+      "Elastic fibers in matrix",
+      "Highly vascular"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chondrocytes arranged in rows is a characteristic feature of fibrocartilage[span_15](start_span)[span_15](end_span)."
+  },
+  {
+    "id": "histo-mss-017",
+    "section": "mss",
+    "category": "Histology",
+    "question": "The main type of collagen present in fibrocartilage is:",
+    "options": [
+      "Collagen type I",
+      "Collagen type II",
+      "Collagen type III",
+      "Collagen type IV",
+      "Collagen type V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fibrocartilage primarily contains collagen type I[span_16](start_span)[span_16](end_span)."
+  },
+  {
+    "id": "histo-mss-018",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following sites contains fibrocartilage?",
+    "options": [
+      "Epiglottis",
+      "Trachea",
+      "Intervertebral disc",
+      "Nose",
+      "Costal cartilage"
+    ],
+    "correctIndex": 2,
+    "explanation": "The intervertebral disc contains fibrocartilage[span_17](start_span)[span_17](end_span)."
+  },
+  {
+    "id": "histo-mss-019",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Which of the following statements about fibrocartilage is TRUE?",
+    "options": [
+      "It is surrounded by perichondrium",
+      "It contains elastic fibers",
+      "It contains collagen type I bundles",
+      "It is found in the pinna of ear",
+      "It forms the embryonic skeleton"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fibrocartilage contains collagen type I bundles[span_18](start_span)[span_18](end_span)."
+  },
+  {
+    "id": "histo-mss-020",
+    "section": "mss",
+    "category": "Histology",
+    "question": "Fibrocartilage is best described as:",
+    "options": [
+      "Soft and flexible cartilage",
+      "Tough cartilage acting as cushioning support tissue",
+      "Temporary cartilage replaced by bone",
+      "Elastic cartilage with many elastic fibers",
+      "Highly vascular cartilage"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fibrocartilage functions as a tough cartilage acting as cushioning support tissue[span_19](start_span)[span_19](end_span)."
+  }
+]

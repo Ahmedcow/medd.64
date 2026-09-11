@@ -1,0 +1,452 @@
+[
+  {
+    "id": "pathology-002",
+    "section": "mss",
+    "category": "pathology",
+    "question": "All of the following tumors are capsulated except:",
+    "options": [
+      "Lipoma",
+      "Chondroma",
+      "Fibroma",
+      "Leiomyoma",
+      "Adenoma"
+    ],
+    "correctIndex": 3,
+    "explanation": "According to the lecture, leiomyoma is the exception among the listed tumors."
+  },
+  {
+    "id": "pathology-028",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the followings is a benign tumor of surface epithelium?",
+    "options": [
+      "Adenoma",
+      "Fibroma",
+      "Osteoma",
+      "Papilloma",
+      "Lipoma"
+    ],
+    "correctIndex": 3,
+    "explanation": "Papilloma is a benign tumor arising from surface epithelium."
+  },
+  {
+    "id": "pathology-038",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Sarcoma differs from carcinoma in that sarcoma:",
+    "options": [
+      "Firm consistency",
+      "Forms less bulky mass than carcinoma",
+      "Cells are arranged in sheets or acini",
+      "Individual cells are separated by little stroma",
+      "Distant metastasis occurs early by lymphatics"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sarcomas characteristically have individual tumor cells separated by relatively little stroma, unlike the cohesive arrangements typical of carcinomas."
+  },
+  {
+    "id": "pathology-018",
+    "section": "mss",
+    "category": "pathology",
+    "question": "As regard malignant tumors, the following is true:",
+    "options": [
+      "It’s localized",
+      "Cannot spread to other sites",
+      "Amenable to local surgical removal",
+      "Can send distant metastasis",
+      "Form capsulated mass"
+    ],
+    "correctIndex": 3,
+    "explanation": "Malignant tumors can invade and metastasize to distant sites."
+  },
+  {
+    "id": "pathology-010",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors shows a true capsule?",
+    "options": [
+      "Papilloma",
+      "Leiomyoma",
+      "Adenoma",
+      "Osteochondroma",
+      "Squamous cell carcinoma"
+    ],
+    "correctIndex": 2,
+    "explanation": "The lecture identifies adenoma as showing a true capsule among the listed choices."
+  },
+  {
+    "id": "pathology-039",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors is a matrix producing tumor?",
+    "options": [
+      "Squamous cell carcinoma",
+      "Adenocarcinoma",
+      "Osteosarcoma",
+      "Basal cell carcinoma",
+      "Transitional cell carcinoma"
+    ],
+    "correctIndex": 2,
+    "explanation": "Osteosarcoma is a malignant mesenchymal tumor characterized by production of osteoid matrix."
+  },
+  {
+    "id": "pathology-006",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Adenoma is applied to:",
+    "options": [
+      "Benign mesenchymal neoplasm",
+      "Benign epithelial neoplasm",
+      "Malignant epithelial neoplasm",
+      "Malignant mesenchymal neoplasm",
+      "A hamartomatous lesion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Adenoma is the term used for a benign epithelial neoplasm, particularly glandular epithelium."
+  },
+  {
+    "id": "pathology-012",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Benign tumor of cartilaginous cells is called:",
+    "options": [
+      "Osteoma",
+      "Chondroma",
+      "Fibroma",
+      "Lipoma",
+      "Hemangioma"
+    ],
+    "correctIndex": 1,
+    "explanation": "A benign tumor composed of cartilaginous cells is called a chondroma."
+  },
+  {
+    "id": "pathology-017",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which is not true for benign tumors?",
+    "options": [
+      "They have no capsule",
+      "Slow rate of growth",
+      "Grow by expansion",
+      "Localized to the site of origin",
+      "The cells are mature"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benign tumors commonly have a capsule or a well-defined boundary, so saying they have no capsule is not true."
+  },
+  {
+    "id": "pathology-003",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Transitional cell papilloma can arise from which of the following sites?",
+    "options": [
+      "Stomach",
+      "Urinary bladder",
+      "Skin",
+      "Colon",
+      "Larynx"
+    ],
+    "correctIndex": 1,
+    "explanation": "Transitional cell papilloma can arise from transitional epithelium, classically in the urinary bladder."
+  },
+  {
+    "id": "pathology-048",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Rodent ulcer is:",
+    "options": [
+      "Squamous cell carcinoma",
+      "Basal cell carcinoma",
+      "Transitional cell carcinoma",
+      "Adenocarcinoma",
+      "Osteosarcoma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rodent ulcer is the classic ulcerative presentation of basal cell carcinoma."
+  },
+  {
+    "id": "pathology-043",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors is characterized by cell nests formation?",
+    "options": [
+      "Squamous cell papilloma",
+      "Squamous cell carcinoma",
+      "Transitional cell carcinoma",
+      "Basal cell carcinoma",
+      "Adenocarcinoma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Squamous cell carcinoma is characterized microscopically by nests of malignant squamous cells."
+  },
+  {
+    "id": "pathology-023",
+    "section": "mss",
+    "category": "pathology",
+    "question": "All are nuclear features of malignancy except:",
+    "options": [
+      "Presence of mitotic figures",
+      "Decreased nuclear cytoplasmic ratio",
+      "Hyperchromatism",
+      "Tumor giant cells",
+      "Prominent nucleolus"
+    ],
+    "correctIndex": 1,
+    "explanation": "An increased, rather than decreased, nuclear-to-cytoplasmic ratio is associated with malignancy."
+  },
+  {
+    "id": "pathology-036",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following statements is true for sarcomas?",
+    "options": [
+      "Malignant mesenchymal tumor",
+      "Fleshy consistency",
+      "Distant spread is predominantly by the blood route",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sarcomas are malignant mesenchymal tumors, are often fleshy, and commonly spread to distant sites through the blood."
+  },
+  {
+    "id": "pathology-046",
+    "section": "mss",
+    "category": "pathology",
+    "question": "A male farmer 50 year old presents with ulcer at the forehead. The edges of the ulcer are raised, inverted (rolled in). The most probable diagnosis is:",
+    "options": [
+      "Squamous cell carcinoma",
+      "Basal cell carcinoma",
+      "Malignant melanoma",
+      "Adenocarcinoma",
+      "Osteosarcoma"
+    ],
+    "correctIndex": 1,
+    "explanation": "A basal cell carcinoma classically presents as a rodent ulcer with raised, rolled-in (inverted) edges."
+  },
+  {
+    "id": "pathology-040",
+    "section": "mss",
+    "category": "pathology",
+    "question": "The following benign tumors are capsulated except:",
+    "options": [
+      "Osteochondroma",
+      "Fibroma",
+      "Chondroma",
+      "Lipoma",
+      "Adenoma"
+    ],
+    "correctIndex": 0,
+    "explanation": "According to the lecture answer key, osteochondroma is the exception among the listed benign tumors."
+  },
+  {
+    "id": "pathology-047",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors is characterized by peripheral palisading?",
+    "options": [
+      "Squamous cell papilloma",
+      "Squamous cell carcinoma",
+      "Transitional cell carcinoma",
+      "Basal cell carcinoma",
+      "Adenocarcinoma"
+    ],
+    "correctIndex": 3,
+    "explanation": "Peripheral palisading of tumor cells is a characteristic microscopic feature of basal cell carcinoma."
+  },
+  {
+    "id": "pathology-026",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following is not characteristic of benign neoplasm?",
+    "options": [
+      "Encapsulation",
+      "Low mitotic index",
+      "Blood vessel invasion",
+      "Slow growth",
+      "Mature tissue"
+    ],
+    "correctIndex": 2,
+    "explanation": "Blood vessel invasion is a feature associated with malignant behavior rather than benign neoplasms."
+  },
+  {
+    "id": "pathology-014",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following is not a neoplasm of epithelial origin?",
+    "options": [
+      "Carcinoma of esophagus",
+      "Carcinoma of stomach",
+      "Carcinoma of skin",
+      "Sarcoma",
+      "Transitional cell papilloma"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sarcoma is a malignant mesenchymal neoplasm, whereas the other listed tumors are epithelial in origin."
+  },
+  {
+    "id": "pathology-022",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Histologic features of malignant tumors include:",
+    "options": [
+      "Uniform nuclear size and shape",
+      "Pleomorphic nuclear size and shape",
+      "No potential for metastasis",
+      "Well defined from surrounding tissue",
+      "Few or no mitotic figures"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pleomorphic nuclear size and shape is a characteristic microscopic feature of malignancy."
+  },
+  {
+    "id": "pathology-030",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the followings is a malignant epithelial tumor?",
+    "options": [
+      "Basal cell carcinoma",
+      "Lymphoma",
+      "Melanoma",
+      "Squamous cell carcinoma",
+      "Teratoma"
+    ],
+    "correctIndex": 3,
+    "explanation": "Squamous cell carcinoma is a malignant epithelial tumor."
+  },
+  {
+    "id": "pathology-050",
+    "section": "mss",
+    "category": "pathology",
+    "question": "The following is not a feature of basal cell carcinoma:",
+    "options": [
+      "It is a locally malignant tumor",
+      "Peripheral palisading",
+      "The ulcer has everted edges",
+      "It spreads only locally",
+      "It's called rodent ulcer"
+    ],
+    "correctIndex": 2,
+    "explanation": "Basal cell carcinoma classically has rolled-in or inverted edges rather than everted edges."
+  },
+  {
+    "id": "pathology-052",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors requires immunohistochemical markers for diagnosis?",
+    "options": [
+      "Melanoma",
+      "Basal cell carcinoma",
+      "Papilloma",
+      "Adenoma",
+      "Lymphoma"
+    ],
+    "correctIndex": 4,
+    "explanation": "Lymphoma diagnosis and classification commonly require immunohistochemical markers to identify lineage and subtype."
+  },
+  {
+    "id": "pathology-005",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Papilloma is defined as:",
+    "options": [
+      "Benign connective tissue tumor",
+      "Benign tumor of glandular epithelium",
+      "Benign tumor of surface epithelium",
+      "Malignant connective tissue tumor",
+      "Malignant epithelial tumor"
+    ],
+    "correctIndex": 2,
+    "explanation": "Papilloma is a benign tumor arising from surface epithelium."
+  },
+  {
+    "id": "pathology-021",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Variation in nuclear and cellular size and shape is called:",
+    "options": [
+      "Pleomorphism",
+      "Hyperchromatism",
+      "Desmoplasia",
+      "Hypoplasia",
+      "Metaplasia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pleomorphism refers to variation in the size and shape of cells and their nuclei."
+  },
+  {
+    "id": "pathology-020",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Malignant tumors are characterized by:",
+    "options": [
+      "They grow by expansion only",
+      "It is usually small in size",
+      "They are non-capsulated",
+      "Their vascularity is poor",
+      "Formed of mature uniform cells"
+    ],
+    "correctIndex": 2,
+    "explanation": "Malignant tumors commonly infiltrate surrounding tissues and are not typically encapsulated."
+  },
+  {
+    "id": "pathology-041",
+    "section": "mss",
+    "category": "pathology",
+    "question": "A patient presented with ulcer on his leg. This ulcer has raised everted edge with necrotic floor. The most possible diagnosis of this ulcer is:",
+    "options": [
+      "TB",
+      "Syphilis",
+      "Leprosy",
+      "Malignant",
+      "Actinomycosis"
+    ],
+    "correctIndex": 3,
+    "explanation": "A malignant ulcer classically has raised, everted edges and a necrotic floor."
+  },
+  {
+    "id": "pathology-011",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Osteoma is defined as:",
+    "options": [
+      "Benign smooth muscle tumor",
+      "Malignant bone tumor",
+      "Malignant cardiac tumor",
+      "Benign bone tumor",
+      "Benign cartilaginous tumor"
+    ],
+    "correctIndex": 3,
+    "explanation": "Osteoma is a benign tumor of bone."
+  },
+  {
+    "id": "pathology-053",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following tumors can manifest with ocular defect?",
+    "options": [
+      "Thyroid adenoma",
+      "Laryngeal papilloma",
+      "Pituitary adenoma",
+      "Colonic adenoma",
+      "Ovarian cystadenoma"
+    ],
+    "correctIndex": 2,
+    "explanation": "A pituitary adenoma can produce visual or ocular defects because of its relationship to the optic pathways."
+  },
+  {
+    "id": "pathology-037",
+    "section": "mss",
+    "category": "pathology",
+    "question": "Which of the following statements is true for sarcoma?",
+    "options": [
+      "Malignant epithelial tumors",
+      "Firm consistency",
+      "Arranged into sheets separated by stroma",
+      "Abundant stroma",
+      "Distant spread is predominantly by the blood"
+    ],
+    "correctIndex": 4,
+    "explanation": "Sarcomas are mesenchymal malignancies and their distant spread is predominantly hematogenous."
+  }
+]
